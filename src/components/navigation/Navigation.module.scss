@@ -1,0 +1,19 @@
+@import '/src/assets/variables';
+
+.navigation_list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(7rem, 110px));
+  justify-content: space-between;
+}
+
+.navigation {
+  font-family: $fira-sans;
+  font-weight: 400;
+  grid-area: navigation;
+}
+
+.navigation_element {
+  display: block;
+  text-align: center;
+  font-size: 1.1rem;
+}

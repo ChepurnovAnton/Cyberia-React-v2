@@ -1,0 +1,10 @@
+@import '/src/assets/variables';
+
+.title {
+  font-weight: 600;
+  font-size: clamp(24px, 3vw, 48px);
+  color: $white-medium;
+  font-family: $fira-sans;
+  width: 74%;
+  margin: 130px auto 65px auto;
+}

@@ -1,0 +1,9 @@
+@import '/src/assets/variables';
+
+.categories_list {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: space-between;
+}
+
+.categories {}

@@ -1,0 +1,39 @@
+@import '/src/assets/variables';
+
+.forms {
+width: 74%;
+margin: 0 auto;
+display: grid;
+min-width: 325px;
+}
+
+
+.title {
+  margin-top: 100px;
+  margin-bottom: 89px;
+  font-weight: 600;
+  font-size: 48px;
+  color: #eff3ff;
+  font-family: $fira-sans;
+
+  @media (max-width: $breackpoint_mobile) {
+    font-weight: 500;
+    font-size: 24px;
+    margin-right: 41px;
+  }
+}
+
+.icon {
+  display: none;
+  @media (max-width: $breackpoint_mobile) {
+    display: inline-block;
+  }
+}
+
+.title_wripper {
+  @media (max-width: $breackpoint_mobile) {
+    display: flex;
+    justify-content: space-between;
+    width: 325px;
+  }
+}

@@ -1,0 +1,62 @@
+@import '/src/assets/variables';
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 60px 140px 25px 62px;
+  gap: 40px;
+
+  @media (max-width: $breackpoint_l) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form fieldset:nth-child(4) {
+  grid-column: 1/4;
+}
+
+.button_forms {
+  justify-self: center;
+  grid-column-end: 3;
+  grid-row-end: 5;
+
+  @media (max-width: $breackpoint_l) {
+    display: none;
+  }
+}
+
+.button_forms_mobile {
+  display: none;
+
+  @media (max-width: $breackpoint_l) {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+.checkbox {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  @media (max-width: $breackpoint_l) {
+    display: none;
+  }
+
+}
+
+.notification {
+  @media (min-width:$breackpoint_l) {
+    display: none;
+  }
+
+  margin-top: 10px;
+  color: $white;
+  text-align: center;
+
+  @media(max-width: $breackpoint_mobile) {
+    font-size: 13px;
+  }
+}

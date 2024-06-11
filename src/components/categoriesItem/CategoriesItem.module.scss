@@ -1,0 +1,14 @@
+@import '/src/assets/variables';
+
+.categoryElement {
+  font-family: $fira-sans;
+  box-shadow: 0 14px 61px 0 rgba(23, 27, 44, 0.75);
+  background: #2b2d3a;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 29px;
+  font-weight: 400;
+  font-size: clamp(12px, 2vw, 24px);
+  color: #eef3ff;
+
+}
