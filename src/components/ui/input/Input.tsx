@@ -5,10 +5,7 @@ const Input: React.FC = () => {
     <>
       <fieldset className={styles.fieldset}>
         <legend className={styles.legend}>{'your name'}*</legend>
-        <input
-          className={styles.input}
-          placeholder={'placeholder'}
-          />
+        <input className={styles.input} />
       </fieldset>
     </>
   )

@@ -5,6 +5,10 @@
   font-size: clamp(24px, 3vw, 48px);
   color: $white-medium;
   font-family: $fira-sans;
-  width: 74%;
-  margin: 130px auto 65px auto;
+  margin: 130px 0 65px 0;
+  padding-left: 25px;
+
+  @media(max-width: 750px) {
+    margin: 29px 0 47px 0;
+  }
 }

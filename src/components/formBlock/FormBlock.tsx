@@ -1,4 +1,5 @@
 import Form from '../form/Form'
+import FormMobile from '../formMobile/FormMobile'
 import styles from './FormBlock.module.scss'
 
 const Forms = () => {
@@ -16,6 +17,7 @@ const Forms = () => {
         </h2>
       </div>
       <Form />
+      <FormMobile />
     </section>
   )
 }

@@ -16,9 +16,9 @@ const Form = () => {
 
       <Button value='Обсудить проект' className={styles.button_forms} />
       {/* <Button value='Отправить' className={styles.button_forms_mobile} /> */}
-      <p className={styles.notification}>
+      {/* <p className={styles.notification}>
         Нажимая “Отправить”, Вы даете согласие на обработку персональных данных
-      </p>
+      </p> */}
       {/* <SuccessfulForm /> */}
     </form>
   )

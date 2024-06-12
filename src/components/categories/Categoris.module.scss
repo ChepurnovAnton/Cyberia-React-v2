@@ -4,6 +4,16 @@
   display: grid;
   grid-template-columns: repeat(4, auto);
   justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 3.2rem;
+
+  @media (max-width: 650px) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 7.6px;
+    row-gap: 17px;
+    justify-content: center;
+  }
 }
 
 .categories {}

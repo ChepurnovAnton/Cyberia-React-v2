@@ -1,10 +1,10 @@
 @import '/src/assets/variables';
 
 .forms {
-width: 74%;
-margin: 0 auto;
-display: grid;
-min-width: 325px;
+  // width: 100%;
+  padding: 0 25px 0 25px;
+  display: grid;
+  // min-width: 320px;
 }
 
 
@@ -12,28 +12,29 @@ min-width: 325px;
   margin-top: 100px;
   margin-bottom: 89px;
   font-weight: 600;
-  font-size: 48px;
+  font-size: clamp(24px,4vw,48px);
   color: #eff3ff;
   font-family: $fira-sans;
 
-  @media (max-width: $breackpoint_mobile) {
+  @media (max-width: 370px) {
     font-weight: 500;
     font-size: 24px;
-    margin-right: 41px;
   }
 }
 
 .icon {
   display: none;
-  @media (max-width: $breackpoint_mobile) {
+
+  @media (max-width: 370px) {
     display: inline-block;
   }
 }
 
 .title_wripper {
-  @media (max-width: $breackpoint_mobile) {
+  @media (max-width: 370px) {
     display: flex;
     justify-content: space-between;
-    width: 325px;
+    min-width: 325px;
+    padding: 0 15px 0 15px;
   }
 }

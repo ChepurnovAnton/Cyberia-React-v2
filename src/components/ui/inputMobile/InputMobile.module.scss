@@ -7,7 +7,7 @@
   font-weight: 300;
   font-size: 18px;
   color: #eff3ff;
-  padding: 0 13px 0 13px;
+  padding: 13px 0 13px 13px;
   font-family: $fira-sans;
 
   &:focus {
@@ -19,18 +19,19 @@
   color: $white;
 }
 
+.legend {
+  font-family: $fira-sans;
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 18px;
+  color: #eff3ff;
+  padding: 0 13px 0 13px;
+}
+
 .fieldset {
   border: 1.50px solid #9aa8ba;
   border-radius: 8px;
   width: 100%;
-  padding-left: 15px;
-}
-
-.legend {
-  font-weight: 300;
-  font-size: 18px;
-  color: #eff3ff;
-  padding: 10px;
 }
 
 .validation_message {

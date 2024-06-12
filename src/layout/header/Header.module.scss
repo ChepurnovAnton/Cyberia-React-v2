@@ -1,14 +1,20 @@
 @import '/src/assets/variables';
 
 .header {
-grid-area: header;
-display: grid;
-grid-template-areas: 'logo . navigation';
-grid-template-columns: 131px minmax(0, 191px) auto;
+  grid-area: header;
+  display: grid;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  grid-template-areas: 'logo . navigation';
+  grid-template-columns: 131px minmax(0, 191px) auto;
+  padding-left: 25px;
+  padding-right: 25px;
 
+  @media(max-width: 750px) {
+    display: none;
+  }
 }
 
 .logo {
   grid-area: logo;
 }
-

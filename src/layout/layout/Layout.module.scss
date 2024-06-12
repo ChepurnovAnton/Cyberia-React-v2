@@ -4,9 +4,16 @@
     '. header .'
     '. body .'
     'footer footer footer';
-    grid-template-columns: auto minmax(325px, 1240px) auto;
+  grid-template-columns: auto minmax(375px, 1240px) auto;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
+
+  @media(max-width: 750px) {
+    grid-template-areas:
+      'header header header '
+      '. body .'
+      'footer footer footer';
+  }
 }
 
 .body {

@@ -6,9 +6,8 @@
   color: $breadcrumbs;
   display: flex;
   gap: 5px;
-  width: 74%;
+  padding-left: 25px;
   min-width: 325px;
-  margin: 0 auto;
 }
 
 .breadcrumbs div:last-child {
