@@ -1,6 +1,7 @@
 import { navigations } from '../../data/navigation'
 import styles from './BurgerMenu.module.scss'
 import { Link } from 'react-router-dom'
+import MenuClose from '../../icons/MenuClose'
 
 const BurgerMenu: React.FC = ({ setIsActiveMenu }) => {
   return (
@@ -9,10 +10,7 @@ const BurgerMenu: React.FC = ({ setIsActiveMenu }) => {
         className={styles.close_button}
         onClick={() => setIsActiveMenu(false)}
       >
-        <img
-          src='public\img\Menu-burger-close.svg'
-          alt='иконка закрытия меню'
-        />
+        <MenuClose />
       </button>
       <ul className={styles.navigation_list}>
         {navigations.map(navElement => (

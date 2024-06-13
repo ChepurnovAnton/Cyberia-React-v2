@@ -1,10 +1,10 @@
 import styles from './Input.module.scss'
 
-const Input: React.FC = () => {
+const Input: React.FC = ({ legend }) => {
   return (
     <>
       <fieldset className={styles.fieldset}>
-        <legend className={styles.legend}>{'your name'}*</legend>
+        <legend className={styles.legend}>{legend}*</legend>
         <input className={styles.input} />
       </fieldset>
     </>
