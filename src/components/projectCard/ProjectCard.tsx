@@ -1,3 +1,4 @@
+import ElementProjectCard from '../../icons/ElementProjectCard'
 import styles from './ProjectCard.module.scss'
 
 interface IProjectCardProps {
@@ -16,12 +17,7 @@ const ProjectCard: React.FC<IProjectCardProps> = ({
       <div className={styles.content}>
         <img className={styles.card_image} src={image} alt='проект' />
         <div className={styles.decsription}>
-          <img
-            src='public/img/element-project-card-mobile.svg'
-            alt='элемент карточки проекта'
-            width={25}
-            height={25}
-          />
+          <ElementProjectCard className = {styles.element_project_card} />
           <h2 className={styles.title}>{title}</h2>
         </div>
         <div className={styles.decsription_mobile}>
